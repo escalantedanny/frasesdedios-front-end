@@ -30,7 +30,7 @@ function App() {
   const [ frase, guardarFrase ] = useState({});
 
   const consultarApi = async () => {
-    const api = await fetch('http://localhost:4000/api/frases');
+    const api = await fetch('https://apifrasesdedios.herokuapp.com/api/frases');
     const frase = await api.json();
     console.log(frase.element);
     
