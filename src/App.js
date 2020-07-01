@@ -30,7 +30,7 @@ function App() {
   const [ frase, guardarFrase ] = useState({});
 
   const consultarApi = async () => {
-    const api = await fetch('http://www.descalante.com/api/frases');
+    const api = await fetch('https://www.descalante.com/api/frases');
     const frase = await api.json();
     
     guardarFrase(frase.element);
